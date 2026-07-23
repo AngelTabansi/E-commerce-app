@@ -1,0 +1,24 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Starting installation phase..."
+
+  pre_build:
+    commands:
+      - echo "Pre-build phase..."
+
+  build:
+    commands:
+      - echo "Building HTML/CSS/JavaScript application..."
+      - ls -la
+
+  post_build:
+    commands:
+      - echo "Build completed successfully."
+
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: no
